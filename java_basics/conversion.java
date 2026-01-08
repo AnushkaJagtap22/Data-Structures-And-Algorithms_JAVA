@@ -1,4 +1,3 @@
-import java.util.*;
 
 public static void convertToBinary(int n) {
     int pow = 0;
