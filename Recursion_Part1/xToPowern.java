@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion_Part1;
 
 public class xToPowern {
     public static int power(int x, int n) {

@@ -1,4 +1,4 @@
-package Recursion;
+package Recursion_Part1;
 
 public class IsArraySorted {
     public static boolean isSorted(int arr[], int i) {
