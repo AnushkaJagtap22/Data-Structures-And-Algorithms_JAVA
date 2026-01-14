@@ -1,0 +1,112 @@
+Order Complexity Analysis (more commonly called Time and Space Complexity Analysis) 
+is a method used to evaluate the efficiency of an algorithm by measuring how its resource usage grows with input size, 
+rather than measuring actual execution time.
+
+Types of Order Complexity
+
+A. Time Complexity
+Measures the number of basic operations executed as a function of input size n.
+| Case         | Meaning       |
+| ------------ | ------------- |
+| Best Case    | Minimum time  |
+| Average Case | Expected time |
+| Worst Case   | Maximum time  |
+
+Example:
+
+for(int i = 0; i < n; i++) {
+    System.out.println(i);
+}
+
+Time Complexity = O(n)
+
+Constant Time Complexity – O(1)
+Definition
+
+An algorithm is said to have constant time complexity if its execution time does not depend on input size.
+
+Example
+int x = arr[5];
+
+Big-O Notation – O (Upper Bound)
+Definition
+
+Big-O notation represents the worst-case time or space complexity of an algorithm.
+
+It tells the maximum time an algorithm may take.
+
+Example
+for(int i = 0; i < n; i++) {
+    System.out.println(i);
+}
+Time Complexity = O(n)
+
+Big-Omega Notation – Ω (Lower Bound)
+Definition
+
+Big-Omega represents the best-case complexity of an algorithm.
+
+It tells the minimum time an algorithm will take.
+
+Example
+
+Linear search when element is at first position
+→ Ω(1)
+
+Theta Notation – Θ (Tight Bound)
+Definition
+
+Theta notation represents the exact order of growth when best and worst cases are the same.
+
+It gives both upper and lower bounds.
+
+Example
+
+Merge Sort → Θ(n log n)
+
+Relationship Between O, Ω, and Θ
+| Notation | Meaning                  |
+| -------- | ------------------------ |
+| O(f(n))  | Worst-case (Upper bound) |
+| Ω(f(n))  | Best-case (Lower bound)  |
+| Θ(f(n))  | Exact / Tight bound      |
+
+
+Common Time Complexities (Very Important)
+
+| Complexity | Name         | Example               |
+| ---------- | ------------ | --------------------- |
+| O(1)       | Constant     | Array access          |
+| O(log n)   | Logarithmic  | Binary Search         |
+| O(n)       | Linear       | Linear Search         |
+| O(n log n) | Linearithmic | Merge Sort            |
+| O(n²)      | Quadratic    | Bubble Sort           |
+| O(n³)      | Cubic        | Matrix multiplication |
+| O(2ⁿ)      | Exponential  | Recursive Fibonacci   |
+| O(n!)      | Factorial    | Traveling Salesman    |
+
+Space Complexity
+Definition
+
+Space complexity measures the extra memory used by an algorithm apart from input space.
+Types of Space
+1. Constant Space – O(1)
+int a, b, sum;
+
+
+Uses fixed memory
+
+2. Linear Space – O(n)
+int temp[] = new int[n];
+
+
+Memory grows with input size
+
+3. Recursive Space
+
+Due to function call stack
+| Algorithm     | Space    |
+| ------------- | -------- |
+| Binary Search | O(log n) |
+| Quick Sort    | O(log n) |
+| Merge Sort    | O(n)     |
