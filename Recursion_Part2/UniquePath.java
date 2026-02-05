@@ -1,4 +1,6 @@
-public class UniquePath {
+package Recursion_Part2;
+
+class UniquePath {
 
     public static int unique(int m, int n) {
         if (m == 1 || n == 1) {
