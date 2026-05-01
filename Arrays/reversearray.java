@@ -1,15 +1,15 @@
 public class reversearray {
     public static void reversedarray(int arr[]) {
-        int start = 0;
-        int end = arr.length - 1;
-        while (start < end) {
-            if (arr[start] != arr[end]) {
-                int temp = arr[start];
-                arr[start] = arr[end];
-                arr[end] = temp;
-                start++;
-                end--;
-            }
+        int n = arr.length;
+        int i = 0 ;
+        int j = n-1;
+        while(i<j)
+        {
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
         }
     }
 
@@ -17,8 +17,8 @@ public class reversearray {
         int arr[] = { 10, 20, 30, 40, 50 };
         reversedarray(arr);
         System.out.println("Reversed array:");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
+        for (int ele : arr) {
+            System.out.print(ele + " ");
         }
     }
 }
