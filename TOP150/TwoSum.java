@@ -1,21 +1,26 @@
 // Amazon - 108 Apple - 43 Google - 39 Facebook - 22 Bloomberg 13
-
-package TOP150;
+import java.util.HashMap;
+import java.util.Map;
 
 public class TwoSum {
-    public int[] twoSum(int[] nums, int target){
-        int n = nums.length;
-        for(int i = 0 ; i < n ; i++)
+    public int[] twoSum(int[] nums, int target) {
+        Map<Integer,Integer> map = new HashMap<>();
+        //iterate through the array
+        for(int i = 0 ; i < nums.length ; i++)
         {
-            for(int j = i+1 ; j < n ; j++)
-            {
-                if(nums[i] + nums[j] == target)
-                {
-                    return new int[] {i,j};
-                }
-            }
-        }   
-        return new int[]{};
+            //calculate complement of current number
+            int complement = target - nums[i];
+        // check if complement is already in map
+        if(map.containsKey(complement))
+        {
+            // if found return indices of complement and current number
+            return new int[] { map.get(complement),i};
+        }
+        //otherwise add current number and its index to map
+        map.put(nums[i],i);
+        }
+    //return empty array
+    return new int[] {};
     }
     public static void main(String[] args) {
         TwoSum ts = new TwoSum();
