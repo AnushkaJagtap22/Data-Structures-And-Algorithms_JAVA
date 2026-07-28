@@ -14,15 +14,9 @@ public class Pattern8 {
                 else
                 {
                     switch (col) {
-                        case 1:
-                            System.out.print("*");
-                            break;
-                        case 6:
-                            System.out.print("*");
-                            break;
-                        default:
-                            System.out.print(" ");
-                            break;
+                        case 1 -> System.out.print("*");
+                        case 6 -> System.out.print("*");
+                        default -> System.out.print(" ");
                     }
                 }
             }
