@@ -13,17 +13,16 @@ public class Pattern8 {
                 //remaining 
                 else
                 {
-                    if(col == 1)
-                    {
-                        System.out.print("*");
-                    }
-                    else if(col == 6)
-                    {
-                        System.out.print("*");
-                    }
-                    else
-                    {
-                        System.out.print(" ");
+                    switch (col) {
+                        case 1:
+                            System.out.print("*");
+                            break;
+                        case 6:
+                            System.out.print("*");
+                            break;
+                        default:
+                            System.out.print(" ");
+                            break;
                     }
                 }
             }
